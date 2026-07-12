@@ -11,7 +11,7 @@ let lines = [
   {
     time: 5900,
     speed: 130,
-    text: "Meri subah ho tum hi aur tum hi shaam ho",
+    text: "Meri subha ho tum hi aur tum hi shaam ho",
   },
   {
     time: 12000,
