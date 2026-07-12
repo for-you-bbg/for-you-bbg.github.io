@@ -104,7 +104,7 @@ body.img {
   line-height: 1.5;
   word-spacing: 0.5rem;
   color: white;
-  font-size: clamp(1.25rem, 2vw + 1rem, 2.5rem);
+  font-size: clamp(1.4rem, 2vw + 1rem, 2.5rem);
   font-style: italic;
   text-align: left;
   width: 90%;
@@ -133,7 +133,7 @@ body.img {
     margin-right: 8vw;
     width: fit-content;
     word-spacing: 0.2rem;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 }
 
