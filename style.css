@@ -50,7 +50,8 @@ body.img {
 }
 
 .bttn__play--music:hover::before,
-.bttn__play--music:focus::before {
+.bttn__play--music:focus::before,
+.bttn__play--music:active::before {
   width: 100%;
   border: none;
 }
@@ -138,12 +139,11 @@ body.img {
     padding: 10px;
     margin-top: 20px;
   }
-
   .lyrics {
     font-size: 1.25rem;
     margin: 25px 20px 0;
     width: auto;
-    line-height: 1.2;
+    line-height: 1.4;
     word-spacing: 0.15rem;
   }
 
