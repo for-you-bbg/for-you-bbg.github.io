@@ -35,6 +35,16 @@ body.img {
   position: relative;
   z-index: 1;
 }
+
+.bttn__play--music:hover::before,
+.bttn__play--music:focus::before,
+.bttn__play--music:active::before {
+  width: 100%;
+  border: none;
+}
+.bttn__play--music:hover {
+  color: black;
+}
 .bttn__play--music::before {
   content: "";
   position: absolute;
@@ -47,16 +57,7 @@ body.img {
   height: 100%;
   transition: width 2s ease;
   z-index: -1;
-}
-
-.bttn__play--music:hover::before,
-.bttn__play--music:focus::before,
-.bttn__play--music:active::before {
-  width: 100%;
-  border: none;
-}
-.bttn__play--music:hover {
-  color: black;
+  color: white;
 }
 /* .bttn__play--music:hover,
 .bttn__play--music:focus {
@@ -103,9 +104,7 @@ body.img {
   margin-top: 40px;
   margin-left: 25vw; /* 25% of the width */
 }
-/* ==========================
-   Responsive (Tablets)
-========================== */
+
 @media (max-width: 768px) {
   body.img {
     height: 100vh;
@@ -128,9 +127,6 @@ body.img {
   }
 }
 
-/* ==========================
-   Responsive (Phones)
-========================== */
 @media (max-width: 480px) {
   .bttn__play--music {
     width: 85%;
