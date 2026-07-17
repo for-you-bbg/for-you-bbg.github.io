@@ -76,11 +76,8 @@ if (window.innerWidth < 768) {
 
 button.addEventListener("click", () => {
   lyrics.innerHTML = "";
-  lyrics.classList.remove("text--hidden");
   document.body.classList.add("img");
   audio.play();
-
-  lyrics.classList.remove("text--hidden");
 
   lines.forEach((line) => {
     setTimeout(() => {
@@ -127,10 +124,10 @@ function createStar() {
   });
 }
 
-// Start creating hearts on hover
 button.addEventListener("mouseleave", () => {
   button.style.color = "black";
 });
+// Start creating hearts on hover
 button.addEventListener("mouseenter", () => {
   if (starInterval) return;
 
@@ -138,4 +135,12 @@ button.addEventListener("mouseenter", () => {
     createStar();
   }
   starInterval = setInterval(createStar, 45);
+});
+gsap.from(button, {
+  x: -400,
+});
+gsap.to(button, {
+  x: 0,
+  duration: 2,
+  ease: "bounce.out",
 });
