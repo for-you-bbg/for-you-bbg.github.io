@@ -132,8 +132,8 @@ button.addEventListener("mouseenter", () => {
   starInterval = setInterval(createStar, 45);
 });
 gsap.from(button, {
-  x: -300,
-  y: 500,
+  x: -200,
+  y: 600,
   opacity:0
 });
 gsap.to(button, {
@@ -156,7 +156,7 @@ gsap.to(button, {
   x: 0,
   y:0,
   opacity:1,
-  duration: 2,
+  duration: 1.5,
   ease:"power2.out",
 });
 }
