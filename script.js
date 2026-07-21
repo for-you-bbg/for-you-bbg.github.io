@@ -67,11 +67,6 @@ let lines = [
     text: "♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪",
   },
 ];
-if (window.innerWidth < 768) {
-  lines[10].text = "♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪";
-  lines[11].text = "♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪";
-  lines[12].text = "♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪";
-}
 // const speed = (nextTime - currentTime) / text.length;
 
 button.addEventListener("click", () => {
@@ -137,10 +132,31 @@ button.addEventListener("mouseenter", () => {
   starInterval = setInterval(createStar, 45);
 });
 gsap.from(button, {
-  x: -400,
+  x: -300,
+  y: 500,
+  opacity:0
 });
 gsap.to(button, {
   x: 0,
-  duration: 2,
-  ease: "bounce.out",
+  y:0,
+  opacity:1,
+  duration: 1.5,
+  rotate:360
 });
+if (window.innerWidth < 768) {
+  lines[10].text = "♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪";
+  lines[11].text = "♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪";
+  lines[12].text = "♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪♪";
+  gsap.from(button, {
+  x: -200,
+  y:  200,
+  opacity:0
+});
+gsap.to(button, {
+  x: 0,
+  y:0,
+  opacity:1,
+  duration: 2,
+  ease:"power2.out",
+});
+}
