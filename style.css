@@ -18,7 +18,7 @@ body {
 }
 
 body.img {
-  background: url(./assets/animation.gif);
+  background: url(animation.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
